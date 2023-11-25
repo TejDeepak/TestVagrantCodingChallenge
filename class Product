@@ -1,0 +1,17 @@
+class Product:
+  def__init__(self,name,unit_price,gst_percentage,quantity)
+  self.name = name
+  self.unit_price = unit_price
+  self.gst_percentage = gst_percentage
+  self.quantity = quantity
+
+leather_wallet =Product("Leather Wallet",1100,18%,1)
+umberella = Product("Umberella",900,12%,4)
+cigarette = Product("Cigarette",200,28%,3)
+honey = Product("Honey",100,0,2)
+
+max_gst = max("Leather Wallet","Umberella","Cigarette","Honey")
+print("The product with maximum GST amount is{max_gst_product.name}")
+
+total_amount = sum(((p.unit_price-(0.05 * p.p.unit_price) if p.unit_price >= 500 else p.unit_price) + p.unit_price * p.gst_percentage)/100) * p.quantity for p in([leather_wallet,umberella,cigarette,honey])
+print("The total amount to be paid to the shop-keeper is{total_amount}")
